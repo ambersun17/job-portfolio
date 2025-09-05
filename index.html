@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amber Sun · 作品集｜艺术 × 地产 × 科技</title>
+  <meta name="description" content="Amber Sun — 创意策略与视觉设计：艺术 × 地产 × 科技" />
+
+  <!-- 保底：最小可用样式 -->
+  <style>
+    :root{--bg:#0b0b0c;--card:#121215;--text:#e9e9ee;--muted:#a5a7b2;--line:#202027;--brand:#c96}
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",Segoe UI,Roboto,Arial}
+    a{color:var(--brand);text-decoration:none} .nav{position:sticky;top:0;display:flex;justify-content:space-between;padding:14px 20px;background:#0b0b0cee;border-bottom:1px solid var(--line)}
+    .brand{font-weight:700;letter-spacing:.06em} .nav a{margin-left:14px;color:#a5a7b2}
+    .hero{min-height:60vh;display:grid;place-items:center;text-align:center;padding:64px 20px}
+    .section{padding:56px 20px;max-width:1100px;margin:0 auto}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:#121215;border:1px solid #202027;border-radius:12px;overflow:hidden}
+    .card-body{padding:16px} @media(min-width:720px){.card{grid-column:span 6}} @media(min-width:1024px){.card{grid-column:span 3}}
+    .btn{display:inline-block;padding:.7rem 1rem;background:var(--brand);color:#fff;border-radius:10px;margin:.25rem}
+    .muted{color:var(--muted)}
+  </style>
+
+  <!-- 外部：你的真·CSS（确保文件名完全一致） -->
+  <link rel="stylesheet" href="./job-portfolio.css?v=2" />
+</head>
+
+<body>
+
+  <!-- 导航 -->
+  <header class="nav">
+    <div class="brand">Amber Sun</div>
+    <nav class="nav-links">
+      <a href="#cases">作品</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <section class="hero hero-cosmic">
+  <!-- 星空画布：放在最底层 -->
+  <canvas id="cosmos" aria-hidden="true"></canvas>
+
+  <!-- 柔和遮罩：降低亮部+拉层次；半透明，别挡住星星 -->
+  <div class="hero-overlay"></div>
+
+  <!-- 文字内容：最上层 -->
+  <div class="hero-wrap">
+    <h1>创意战略策划｜艺术 × 地产 × 科技</h1>
+    <p class="hero-sub">把抽象理念转化为可落地的广告与传播方案，兼顾品牌资产沉淀与商业转化。</p>
+    <div class="hero-cta">
+      <a href="#cases" class="btn">查看项目</a>
+      <a href="#contact" class="btn ghost">联系我</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 案例 -->
+  <section id="cases" class="section">
+    <div class="section-head">
+      <h2>项目案例</h2>
+      <p class="muted">精选与岗位强相关的 4 个代表作品</p>
+    </div>
+
+    <div class="grid">
+      <!-- 卡片1 -->
+      <article class="card">
+        <a class="card-media" href="cases/real-estate.html">
+          <img src="assets/realestate-cover.jpg" alt="地产广告整合">
+        </a>
+        <div class="card-body">
+          <h3>地产广告整合｜定位 × 视觉 × 渠道</h3>
+          <p>品牌定位 · 视觉主张 · 投放与数据复盘</p>
+        </div>
+      </article>
+
+      <!-- 卡片2 -->
+      <article class="card">
+        <a class="card-media" href="cases/art-x-realestate.html">
+          <img src="assets/artxre-cover.jpg" alt="艺术 × 地产联动">
+        </a>
+        <div class="card-body">
+          <h3>艺术 × 地产联动｜Campaign 概念到落地</h3>
+          <p>展陈路线 · 活动策划 · 商业转化</p>
+        </div>
+      </article>
+
+      <!-- 卡片3 -->
+      <article class="card">
+        <a class="card-media" href="cases/edtech-uiux.html">
+          <img src="assets/edtech-cover.jpg" alt="AI 教育平台 UI/UX">
+        </a>
+        <div class="card-body">
+          <h3>AI 教育平台｜UI/UX 与增长</h3>
+          <p>用户路径 · RSVP 运营 · Audience vs User</p>
+        </div>
+      </article>
+
+      <!-- 卡片4 -->
+      <article class="card">
+        <a class="card-media" href="cases/wing-woman.html">
+          <img src="assets/wing-woman-cover.jpg" alt="Wing Woman IP">
+        </a>
+        <div class="card-body">
+          <h3>原创 IP《Wing Woman》｜概念短片</h3>
+          <p>视觉叙事 · AI 工具融合 · 品牌表达</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <h2>关于我</h2>
+    </div>
+    <div class="about">
+      <ul>
+        <li>跨界创意：艺术 × 地产 × 科技，一人完成从策略到视觉与传播落地</li>
+        <li>实战导向：注重“结果”——投放与数据复盘、品牌资产沉淀</li>
+        <li>工具：Figma / PS / PR / AE / Web / 多模型 AI 协作</li>
+        </ul>
+         </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <h2>联系</h2>
+    </div>
+    <ul class="contact">
+      <li>📧 <a href="mailto:ambersun17@hotmail.com">ambersun17@hotmail.com</a></li>
+      <li>📱 16601227488</li>
+      <li><a href="SUNXIAOTING-AmberSun-CV.pdf" class="btn">下载简历 PDF</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>© Amber Sun</div>
+    <div>
+      <a href="#" class="top">WeChat</a>
+      <a href="#" class="top">Instagram</a>
+      <a href="#" class="top">GitHub</a>
+    </div>
+  </footer>
+<script>
+(function(){
+  const c = document.getElementById('cosmos');
+  if(!c) return;
+  const ctx = c.getContext('2d');
+  let W,H,stars=[];
+  const COUNT = 500; // 星点数量
+
+  function resize(){
+    const dpr = window.devicePixelRatio || 1;
+    W = c.clientWidth = c.parentElement.clientWidth;
+    H = c.clientHeight = Math.max(420, c.parentElement.clientHeight);
+    c.width = W * dpr; c.height = H * dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    makeStars();
+  }
+  function makeStars(){
+    stars = Array.from({length:COUNT}, ()=>({
+      x: Math.random()*W,
+      y: Math.random()*H,
+      r: Math.random()*1.6 + 0.2,
+      s: Math.random()*0.4 + 0.1, // 速度
+      a: Math.random()*1
+    }));
+  }
+  function tick(){
+    ctx.clearRect(0,0,W,H);
+    for(const s of stars){
+      s.x += s.s*0.2; s.y -= s.s*0.08; s.a += 0.02;
+      if(s.x>W+10) s.x=-10;
+      if(s.y<-10) s.y=H+10;
+      const glow = 180 + Math.sin(s.a)*70;
+      ctx.fillStyle = `rgba(${glow},${glow+50},255,0.9)`;
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill();
+    }
+    requestAnimationFrame(tick);
+  }
+  window.addEventListener('resize', resize, {passive:true});
+  resize(); tick();
+})();
+</script>
+
+</body>
+</html>
